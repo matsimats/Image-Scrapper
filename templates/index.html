@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Downloader</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<h1>Image Downloader</h1>
+
+<form id="url-form">
+    <label for="url">Enter URL:</label>
+    <input type="text" id="url" name="url">
+    <button type="submit">Fetch Images</button>
+</form>
+
+<div id="result">
+    <p>Image Count: <span id="image-count">0</span></p>
+    <div id="images-container">
+    </div>
+</div>
+
+ <button id="download-all">Download All</button>
+ 
+ <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

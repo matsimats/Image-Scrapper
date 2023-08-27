@@ -1,0 +1,73 @@
+/* Ogólne style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style dla nagłówka */
+h1 {
+    background-color: #4CAF50;
+    color: white;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Style dla formularza */
+#url-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#url-form label {
+    margin-right: 10px;
+    align-self: center;
+}
+
+#url-form input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#url-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#url-form button:hover {
+    background-color: #45a049;
+}
+
+/* Style dla wyników */
+#result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#images-container img {
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+#images-container img:hover {
+    transform: scale(1.1);
+}
